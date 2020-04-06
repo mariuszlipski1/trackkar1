@@ -8,7 +8,7 @@ public class helloword {
 
         @RequestMapping("/")
         public String index(){
-            return "Test środowiska";
+            return "Dołączone PotsgreSQL";
         }
 
 }
