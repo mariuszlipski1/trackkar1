@@ -8,7 +8,7 @@ public class helloword {
 
         @RequestMapping("/")
         public String index(){
-            return "Hello World1111";
+            return "Test środowiska";
         }
 
 }
