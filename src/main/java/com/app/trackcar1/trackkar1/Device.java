@@ -12,6 +12,17 @@ public class Device {
 
     private boolean disabled;
 
+    public Device() {
+    }
+
+    public Device(Long id, String name, String uniqueId, String status, boolean disabled) {
+        this.id = id;
+        this.name = name;
+        this.uniqueId = uniqueId;
+        this.status = status;
+        this.disabled = disabled;
+    }
+
     public Long getId() {
         return id;
     }
