@@ -1,0 +1,16 @@
+### Basic authorization.
+GET http://localhost:8082/admin/admin
+Authorization: Basic admin admin
+###
+
+
+# pierwszy element devices
+GET http://localhost:8082/api/devices?id=1
+Accept: application/json
+
+###
+
+# curl -i http://localhost:8082/api/devices
+GET http://localhost:8082/api/devices
+
+###
