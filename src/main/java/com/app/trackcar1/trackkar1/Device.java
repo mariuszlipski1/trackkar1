@@ -26,6 +26,9 @@ public class Device {
         this.disabled = disabled;
     }
 
+    public Device(int i, String test, int i1, String online, int i2) {
+    }
+
     public Long getId() {
         return id;
     }
@@ -93,4 +96,11 @@ public class Device {
                 ", disabled=" + disabled +
                 '}';
     }
+
+//    Device tel = new Device(5,"test",5,"online",0);
+//    Device tel2 = new Device(5,"test",5,"online",0);
+//
+//    if(tel == tel2){
+//        return "działa";
+//    }else{"niedziałą"};
 }
