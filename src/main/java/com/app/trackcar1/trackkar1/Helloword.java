@@ -18,8 +18,5 @@ public class Helloword {
     Device tel = new Device(5,"test",5,"online",0);
     Device tel2 = new Device(5,"test",5,"online",0);
 
-//    if( tel == tel2){
-//        return "działa";
-//    }else{"niedziałą"};
 }
 
