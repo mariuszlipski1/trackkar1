@@ -11,7 +11,7 @@ public class Device {
     private String status;
 
     private boolean disabled;
-    
+
 
     public Device() {
     }
