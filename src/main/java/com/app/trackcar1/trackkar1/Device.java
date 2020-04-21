@@ -1,5 +1,7 @@
 package com.app.trackcar1.trackkar1;
 
+import java.util.Objects;
+
 public class Device {
 
     private Long id;
@@ -62,5 +64,33 @@ public class Device {
 
     public void setDisabled(boolean disabled) {
         this.disabled = disabled;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Device)) return false;
+        Device device = (Device) o;
+        return isDisabled() == device.isDisabled() &&
+                getId().equals(device.getId()) &&
+                getName().equals(device.getName()) &&
+                getUniqueId().equals(device.getUniqueId()) &&
+                getStatus().equals(device.getStatus());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getName(), getUniqueId(), getStatus(), isDisabled());
+    }
+
+    @Override
+    public String toString() {
+        return "Device{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", uniqueId='" + uniqueId + '\'' +
+                ", status='" + status + '\'' +
+                ", disabled=" + disabled +
+                '}';
     }
 }
